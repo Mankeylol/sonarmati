@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color: #F0E0CA;
+    color: #000;
+  }
+  .top-padding{
+    padding-top: 40px;
+    background-color: #CFAE74;
+  }
+  .navbar {
+      padding: 0px 193px 0px 197px;
+      background-color: rgba(207, 174, 116, 0.5);
+      color: #000000;
+  }
+  
+  .navbar-margin {
+      margin-bottom: 20px;
+  }
+  
+  .navbar-container {
+    height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+  }
+  
+  .logo {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      font-family: 'Josefin Slab', sans-serif;
+      font-size: 27px;
+      font-weight: 600;
+  }
+  
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      font-size: 16px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 500;
+  
+  }
+  
+  
+  .nav-links li a {
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.5px;
+  }
+  
+  .cart-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hero-padding {
+    height: 9px;
+    background-color: #CFAE74;
+    border-top: 2px solid #AA5B11;  
+    border-bottom: 2px solid #AA5B11; 
+  }

@@ -9,6 +9,8 @@ body {
   }
   .navbar {
       padding: 0px 193px 0px 197px;
+      background-color: rgba(207, 174, 116, 0.5);
+      color: #000000;
   }
   
   .navbar-container {
@@ -62,6 +64,8 @@ body {
     font-weight: 600;
     margin-top: 30px;
     margin-bottom: 20px;
+    margin-top: 50px;
+    letter-spacing: 3px;
   }
 
   .about-us-wrapper {
