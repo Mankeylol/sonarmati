@@ -1,63 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script src="products.js" defer></script>
-  <script src="shop.js" defer></script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sonar Mati</title>
+  <title>Product Details</title>
   <link rel="stylesheet" href="shop.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <script src="products.js" defer></script>
+  <script src="product.js" defer></script>
 </head>
-
 <body>
   <div class="top-padding"></div>
   <div class="hero-padding"></div>
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="logo" style="display:flex;align-items:center;gap:10px;"><img height="70px" src="logo.png" alt=""><p>SONARMATI</p></div>
+      <div class="logo" style="display:flex;align-items:center;gap:10px;"><img height="70px" src="logo.png" alt=""><p style="font-weight:200; font-family: josefin slab sans-serif; font-size: 27px;">SONARMATI</p></div>
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="shop.html" class="nav-link-active">SHOP</a></li>
+        <li><a href="shop.html">SHOP</a></li>
         <li><a href="customize.html">CUSTOMIZE</a></li>
         <li><a href="login.html">LOGIN/SIGN UP</a></li>
-        <li><a href="cart.html"><span class="cart-icon"><img src="bag-icon.png" alt="Cart"></span></a></li>
+        <li><a href="cart.html" class="cart-link"><span class="cart-icon"><img src="bag-icon.png" alt="Cart"><span id="cart-badge"></span></span></a></li>
       </ul>
     </div>
   </nav>
   <div class="hero-padding navbar-margin"></div>
-  <div class="shopping-container">
-    <div class="shopping-fliters">
-      <div class="shopping-fliters-categories">
-        <p class="shopping-filter-heading" onc>CATEGORIES</p>
-        <p class="shopping-filter-text">JEWELRY</p>
-        <p class="shopping-filter-text">HOME DECOR</p>
-        <p class="shopping-filter-text">BEST SELLER</p>
-      </div>
-      <div class="shopping-fliters-filterby">
-        <p class="shopping-filter-heading">FILTER BY</p>
-        <p class="shopping-filter-text">PRICE</p>
-        <p class="shopping-filter-text">DELIVERY</p>
-        <p class="shopping-filter-text">SIZE</p>
-      </div>
-    </div>
-    <div class="shopping-divider"></div>
-    <div class="shopping-products">
-
-    </div>
-
-  </div>
-  <div class="pagination" id="pagination"></div>
-
+  <div id="product-detail-container"></div>
 
   <div class="footer-box">
     <div class="footer-container">
@@ -89,14 +56,14 @@
           <ul class="link-list">
             <li><a href="aboutUs.html">ABOUT US</a></li>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#">SHOP ALL</a></li>
+            <li><a href="shop.html">SHOP ALL</a></li>
             <li><a href="#">FAQs</a></li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#">OUR POLICY</a></li>
           </ul>
           <ul class="link-list">
-            <li><a href="#">CUSTOMIZE</a></li>
-            <li><a href="#">GUIDE TO CUSTOMIZATION</a></li>
+            <li><a href="customize.html">CUSTOMIZE</a></li>
+            <li><a href="customize.html">GUIDE TO CUSTOMIZATION</a></li>
             <li><a href="#">CUSTOMER CARE</a></li>
             <li><a href="#">HELP</a></li>
             <li><a href="#">T&C</a></li>
@@ -114,5 +81,5 @@
       </ul>
     </div>
   </div>
-
 </body>
+</html>

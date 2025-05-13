@@ -2,31 +2,173 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sonar Mati</title>
-  <link rel="stylesheet" href="customize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonar Mati</title>
+    <link rel="stylesheet" href="customize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="customize.js"></script>
 
 </head>
 
 <body>
-  <div class="top-padding"></div>
-  <div class="hero-padding"></div>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">SONARMATI</div>
-      <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="shop.html">SHOP</a></li>
-        <li><a href="customize.html">CUSTOMIZE</a></li>
-        <li><a href="login.html">LOGIN/SIGN UP</a></li>
-        <li><a href="cart.html"><span class="cart-icon"><img src="bag-icon.png" alt="Cart"></span></a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="hero-padding navbar-margin"></div>
+    <div class="top-padding"></div>
+    <div class="hero-padding"></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo" style="display:flex;align-items:center;gap:10px;">
+              <img height="70px" src="logo.png" alt="">
+              <p>SONARMATI</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="customize.html" class="nav-link-active">CUSTOMIZE</a></li>
+                <li><a href="login.html">LOGIN/SIGN UP</a></li>
+                <li><a href="cart.html" class="cart-link"><span class="cart-icon"><img src="bag-icon.png" alt="Cart"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-padding navbar-margin"></div>
+    <section>
+        <div class="hero-bg">
+            <img src="customize-bg-1.png" alt="">
+        </div>
+        <div class="main-container">
+            <div class="image-section">
+                <div class="upload-image">
+                  <!-- Hidden input field -->
+                  <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                  
+                  <!-- Clickable image trigger -->
+                  <img
+                    style="width: 250px; height: 330px; cursor: pointer;"
+                    class="upload-btn"
+                    src="upload-image.png"
+                    alt="Upload"
+                    id="uploadBtn"
+                  >
+                </div>
+              
+                <p style="font-size: 25px; text-decoration: underline;">
+                  Add your image here
+                </p>
+              </div>
+              
+            <div class="form-section">
+                <p style="font-size: 22px; margin-top: -70px; margin-bottom: 10px;">Product category</p>
+                <input style="margin-bottom: 10px;" class="product-category" type="text">
+                <p style="font-size: 22px; margin-bottom: 9px;">Notes</p>
+                <textarea class="lined-textarea" name="" id=""></textarea>
+                <div style="font-weight: 200; margin-top: 20px; display: flex; align-items: center;">
+                    <label style="font-size: 22px;" for="">Length</label>
+                    <input class="measurements" type="text">
+                    <label style="font-size: 22px;" for="">Breadth</label>
+                    <input class="measurements" type="text">
+                    <label style="font-size: 22px;" for="">Height</label>
+                    <input class="measurements" type="text">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="browse-ideas">
+            <p style="font-size: 37px; text-align: center; font-family: 'josefin sans', sans-serif; text-decoration: underline;">Browse Ideas</p>
+            <div style="display: flex; justify-content: center; gap: 50px; font-family: 'inter', sans-serif;">
+                <div >
+                    <img src="idea1.png" alt="">
+                    <p style="margin-bottom: 0px;">Dragonfly mirror wall hanging</p>
+                    <p style="margin-top: 0px;" >INR 6,500</p>
+                </div>
+                <div>
+                    <img src="idea2.png" alt="">
+                    <p style="margin-bottom: 0px;">Serpent curtain holder</p>
+                    <p style="margin-top: 0px;">INR 3000</p>
+                </div>
+                <div>
+                    <img src="idea3.png" alt="">
+                    <p style="margin-bottom: 0px;">Antique coffee table</p>
+                    <p style="margin-top: 0px;">INR 8,000</p>
+                </div>
+
+            </div>
+            <div class="hero-padding" style="margin-top: 80px;">
+                
+            </div>
+        </div>
+
+        <div class="guide-to-customize" style="display: flex; justify-content: center; margin-top: 85px; margin-bottom: 80px;">
+            <img src="guide-to-customization.png" style="width: 1030px; height: 1220px;" alt="">
+        </div>
+        <img src="guide.bg.png" style="width: 1480px; height: 700px; position: absolute;
+        top: 1610px;
+        left: 0;
+        z-index: -1;" alt="">
+        <img src="missing-icon.png" style=" position: absolute;
+        top: 2150px;
+        left: 420px;
+        z-index: 3;" alt="">
+    </section>
+    <div class="footer-box">
+        <div class="footer-container">
+          <div class="footer-text-container">
+            <p id="footer-main-text">Creating, Celebrating and Conserving Art.</p>
+            <p id="footer-sub-text">Wait! Don’t miss 10% off your first order – join us now </p>
+            <form action="" class="footer-form">
+              <label for="email" class="footer-label">Email</label>
+              <div class="footer-input-container">
+                <input type="text" class="footer-input">
+                <button class="footer-button"><img src="footerbtn.png"></button>
+              </div>
+              <div class="footer-checkbox-container">
+                <label class="footer-checkbox-wrapper">
+                  <input class="footer-checkbox" type="checkbox" id="checkbox">
+                  <span class="custom-box"></span>
+                  Yes, subscribe me to all new offers.
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="footer-line-container">
+            <div class="ellipse top"></div>
+            <div class="footer-line"></div>
+            <div class="ellipse bottom"></div>
+          </div>
+          <div class="footer-links-container">
+            <div class="footer-links">
+              <ul class="link-list">
+                <li><a href="aboutUs.html">ABOUT US</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">SHOP ALL</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">OUR POLICY</a></li>
+              </ul>
+              <ul class="link-list">
+                <li><a href="#">CUSTOMIZE</a></li>
+                <li><a href="#">GUIDE TO CUSTOMIZATION</a></li>
+                <li><a href="#">CUSTOMER CARE</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">T&C</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="custom-hr">
+        <div class="footer-bottom-container">
+          <ul>
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">PINREST</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">customers@sonarmati.com</a></li>
+          </ul>
+        </div>
+      </div>
+</body>

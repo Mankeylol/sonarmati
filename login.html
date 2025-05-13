@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sonar Mati</title>
-  <link rel="stylesheet" href="customize.css">
+  <link rel="stylesheet" href="login.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
@@ -19,14 +19,99 @@
   <div class="hero-padding"></div>
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="logo">SONARMATI</div>
+      <div class="logo" style="display:flex;align-items:center;gap:10px;"><img height="70px" src="logo.png" alt=""><p>SONARMATI</p></div>
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="shop.html">SHOP</a></li>
         <li><a href="customize.html">CUSTOMIZE</a></li>
-        <li><a href="login.html">LOGIN/SIGN UP</a></li>
-        <li><a href="cart.html"><span class="cart-icon"><img src="bag-icon.png" alt="Cart"></span></a></li>
+        <li><a href="login.html" class="nav-link-active">LOGIN/SIGN UP</a></li>
+        <li><a href="cart.html" class="cart-link"><span class="cart-icon"><img src="bag-icon.png" alt="Cart"></span></a></li>
       </ul>
     </div>
   </nav>
   <div class="hero-padding navbar-margin"></div>
+  <div class="login-container" style=" margin-bottom: 15px; background-image: url(login-bg.png); width: 100%; height: 650px; display: flex; align-items: center; justify-content: center;">
+    <div class="login-form" style="width: 430px; height: 540px; background-color: #AA5B11; z-index: 1; border: 3px solid #CFAE74; border-radius: 31px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <p style=" margin-top: 0px; letter-spacing: 1px; font-family: 'josefin slab', serif; font-size: 31px; font-weight: 600; color: #F0E0CA; text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+">Profile Login</p>
+      <p style="margin-bottom: 25px; margin-top: -5px; letter-spacing: 1px; font-family: 'josefin sans', sans-serif; font-size: 16px; font-weight: 600; color: #F0E0CA; width: 260px; text-align: center;">Enter your details to sign in to your account.</p>
+      <input type="text" class="login-input" placeholder="Enter Email / Phone number">
+      <input type="password" class="login-input" placeholder="Password">
+      <p style="text-align: right; margin-left: 240px; margin-top: -8px; font-size: 11px; color: #CFAE74;">view password</p>
+      <p style="margin-top: 0px; margin-right: 160px; color: #F0E0CA;">Having trouble signing in?</p>
+      <button style="width: 340px; height: 40px; background-color: #CFAE74; border-radius: 7px; font-family: 'josefin sans', serif; font-weight: 600; font-size: 14px; border: 0px; cursor: pointer;" onclick="window.location.href='shop.html'">Sign in</button>
+      <p>─ Or Sign in with ─</p>
+      <div style="display: flex; gap: 10px; justify-content: center;">
+        <div class="alternative">
+          <img src="google.png" alt="">
+          <p>Google</p>
+        </div>
+        <div class="alternative">
+          <img src="apple.png" alt="">
+          <p>Apple</p>
+        </div>
+        <div class="alternative">
+          <img src="facebook.png" alt="">
+          <p>Facebook</p>
+        </div>
+      </div>
+      <p style="margin-top: 20px; color: #CFAE74;">Don’t have an account? <span style="color: #F0E0CA; text-decoration: underline;">Sign Up</span></p>
+    </div>
+  </div>
+  <div class="hero-padding"></div>
+  <div class="footer-box">
+    <div class="footer-container">
+      <div class="footer-text-container">
+        <p id="footer-main-text">Creating, Celebrating and Conserving Art.</p>
+        <p id="footer-sub-text">Wait! Don’t miss 10% off your first order – join us now </p>
+        <form action="" class="footer-form">
+          <label for="email" class="footer-label">Email</label>
+          <div class="footer-input-container">
+            <input type="text" class="footer-input">
+            <button class="footer-button"><img src="footerbtn.png"></button>
+          </div>
+          <div class="footer-checkbox-container">
+            <label class="footer-checkbox-wrapper">
+              <input class="footer-checkbox" type="checkbox" id="checkbox">
+              <span class="custom-box"></span>
+              Yes, subscribe me to all new offers.
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="footer-line-container">
+        <div class="ellipse top"></div>
+        <div class="footer-line"></div>
+        <div class="ellipse bottom"></div>
+      </div>
+      <div class="footer-links-container">
+        <div class="footer-links">
+          <ul class="link-list">
+            <li><a href="aboutUs.html">ABOUT US</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">SHOP ALL</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">OUR POLICY</a></li>
+          </ul>
+          <ul class="link-list">
+            <li><a href="#">CUSTOMIZE</a></li>
+            <li><a href="#">GUIDE TO CUSTOMIZATION</a></li>
+            <li><a href="#">CUSTOMER CARE</a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">T&C</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="custom-hr">
+    <div class="footer-bottom-container">
+      <ul>
+        <li><a href="#">FACEBOOK</a></li>
+        <li><a href="#">PINREST</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+        <li><a href="#">customers@sonarmati.com</a></li>
+      </ul>
+    </div>
+  </div>
+  </body>

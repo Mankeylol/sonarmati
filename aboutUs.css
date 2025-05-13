@@ -9,15 +9,7 @@ body {
   }
   .navbar {
       padding: 0px 193px 0px 197px;
-      background-color: rgba(207, 174, 116, 0.5);
       color: #000000;
-  }
-  
-  .navbar-container {
-    height: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
   }
   
   .logo {
@@ -28,23 +20,53 @@ body {
       font-weight: 600;
   }
   
-  .nav-links {
-      list-style: none;
+  .navbar-container {
+    height: 70px;
       display: flex;
-      gap: 80px;
+      justify-content: space-between;
       align-items: center;
-      font-size: 16px;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 500;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.5px;
+}
+  .nav-links li a:hover:not(.cart-link) {
+    padding: 10px 20px;
+    opacity: 0.7;
+    background-color: #CFAE74;
+    color: #1F4E5F;
+    border-radius: 17px;
+    min-width: 100px;
+    height: 35px;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(207,174,116,0.08);
   }
   
-  
-  .nav-links li a {
-      text-decoration: none;
-      color: black;
-      letter-spacing: 0.5px;
+  .nav-link-active {
+    font-weight: bold;
+    padding: 5px 10px;
+    opacity: 0.7;
+    background-color: #CFAE74;
+    color: #1F4E5F;
+    border-radius: 17px;
+    min-width: 100px;
+    height: 35px;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(207,174,116,0.08);
   }
-  
+
   .cart-icon img {
     width: 40px;
     height: 40px;
